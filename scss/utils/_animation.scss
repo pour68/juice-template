@@ -1,0 +1,13 @@
+@keyframes float-juice {
+    0% {
+        transform: translateY(0) rotate(15deg);
+    }
+
+    50% {
+        transform: translateY(-1.5rem) rotate(15deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(15deg);
+    }
+}
