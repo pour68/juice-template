@@ -23,6 +23,16 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+
+  this.scrollY >= 50
+    ? header.classList.add("scroll-header")
+    : header.classList.remove("scroll-header");
+};
+window.addEventListener("scroll", scrollHeader);
+
 TweenMax.from(".home__title", 1, {
   delay: 0.2,
   opacity: 0,
